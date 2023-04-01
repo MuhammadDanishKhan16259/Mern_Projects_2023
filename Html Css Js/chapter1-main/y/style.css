@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+body{
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3em 0;
+}
+.top-bar{
+    width: 80%;
+    background-color: rgb(58, 74, 165);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+    padding: 1em;
+    border-radius: 15px;    
+}
+.top-bar .heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0.5em 0;
+}
+.top-bar .heading .icon{
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    background-color: rgb(36, 49, 126);
+    margin: 0 0.5em;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading1 .name{
+    padding: 0.5em 0;
+    font-size: 1.2em;
+}
+.conatiner{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    padding: 1em 0;
+    margin: 1em 0;
+}
+.conatiner a .chp1, a .chp2, a .chp3, a .chp4, a .chp5, a .chp6, a .chp7, a .chp8, a .chp9, a .chp10, a .chp11{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.conatiner .chp1-content h1, .chp2-content h1, .chp3-content h1, .chp4-content h1, .chp5-content h1, .chp6-content h1, .chp7-content h1, .chp8-content h1, .chp9-content h1, .chp10-content h1, .chp11-content h1{
+    font-size: 1.6em;
+    color: #51535c;
+    padding: 0 0.5em;
+    transition: 0.3s;
+}
+.conatiner .chp1-content p, .chp2-content p, .chp3-content p, .chp4-content p, .chp5-content p, .chp6-content p, .chp7-content p, .chp8-content p, .chp9-content p, .chp10-content p, .chp11-content p{
+    font-size: 1.1em;
+    color: #333;
+    padding: 0.3em 0.8em;
+}
+.conatiner .outera{
+    text-decoration: none;
+    width: 45%;
+    padding: 0.7em;
+    border-radius: 15px;
+    margin: 0.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0px 0px 4px 2px #eee;
+    transition: 0.3s;
+}
+.conatiner a:hover{
+    box-shadow: inset 0px 0px 4px 2px #eee;
+    transition: 0.3s;
+}
+.conatiner a:hover .chp1-content h1, a:hover .chp2-content h1, a:hover .chp3-content h1, a:hover .chp4-content h1, a:hover .chp5-content h1, a:hover .chp6-content h1, a:hover .chp7-content h1, a:hover .chp8-content h1, a:hover .chp9-content h1, a:hover .chp10-content h1, a:hover .chp11-content h1{
+    color: #6b77bf;
+    transition: 0.3s;
+}

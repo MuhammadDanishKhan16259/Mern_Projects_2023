@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript || Chapter 49-52 task 02</title>
+    <style>
+        .container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        p{
+            width: 90%;
+            font-size: 1.5em;
+            font-family: sans-serif;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum a odio iste nulla quis quisquam, enim quaerat nam pariatur, in rerum itaque expedita libero? Sed optio neque delectus voluptates aspernatur! Officia corporis aperiam non. Animi, facilis! Nesciunt ipsam eius numquam,...<a href="#" class="read">Read more.</a></p>
+    </div>
+
+    <script>
+        let text = document.querySelector("p").innerHTML;
+        let readMore = document.querySelector(".read");
+        // let pera;
+        let teext = " libero earum eum maiores fugiat ea modi unde voluptatum fugit quia iusto vero animi exercitationem inventore vel, veniam sapiente odit et totam repellendus! Quas nihil ipsa cumque distinctio ad laborum, vero voluptatum magnam mollitia corrupti dignissimos et ducimus eligendi amet, commodi quasi sit illo. Ullam, provident vero omnis rerum soluta magnam sint sit culpa repudiandae dolores nulla rem porro perferendis?";
+        
+        readMore.addEventListener("click", more);
+
+        // for(let i = 0; i < text.length; i++) {
+        //     if(text.slice(i, i + 42) == '...<a href="#" class="read">Read more.</a>'){
+        //         pera = text.slice(0, i) + teext;
+        //     }
+        // }
+        // console.log(pera);
+        function more () {
+            // document.querySelector("p").innerHTML = pera;
+            let a = text.replace('...<a href="#" class="read">Read more.</a>', teext);
+            document.querySelector("p").innerHTML = a;
+            // console.log(a);
+        }
+
+    </script>
+</body>
+</html>

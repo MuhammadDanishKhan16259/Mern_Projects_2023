@@ -1,0 +1,45 @@
+.inputArea {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+input,
+textarea {
+  width: 350px;
+  height: 50px;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background-color: #064663;
+  border-radius: 10px 10px 0 0;
+  color: #ecb365;
+}
+
+textarea {
+  height: 150px;
+  border-radius: 10px;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  background-color: #04293a;
+  color: #ecb365;
+  font-weight: 600;
+  margin-top: -1.5rem;
+  cursor: pointer;
+  box-shadow: 0 0 13px 0 #ecb365;
+}
+
+button:hover {
+  box-shadow: 0 0 13px 5px #ecb365;
+}

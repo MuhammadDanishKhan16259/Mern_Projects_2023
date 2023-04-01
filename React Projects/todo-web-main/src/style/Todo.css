@@ -1,0 +1,89 @@
+.updateB {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgb(40 29 52 / 52%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+}
+.box {
+  width: 450px;
+  height: 300px;
+  border-radius: 15px;
+  padding: 1rem;
+  background-color: #150e17;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-left: 2px solid #3338b1;
+  border-top: 2px solid #3338b1;
+  border-right: 2px solid #a117b6;
+  border-bottom: 2px solid #a117b6;
+  position: relative;
+}
+.box input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  margin: 0 0.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  border: 2px solid #a117b6;
+  outline: 2px solid #1341af;
+  color: #eee;
+  background-color: #eeeeee0f;
+}
+.box button {
+  width: 150px;
+  height: 45px;
+  font-size: 1.1rem;
+  background: transparent;
+  color: #eee;
+  border-radius: 10px;
+  margin-left: 0.5rem;
+  background: linear-gradient(37deg, #a915b8, #1341af);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  outline: 2px dotted #eaeaea;
+}
+.box button:hover {
+  background: linear-gradient(37deg, #1341af, #a915b8);
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #3338b1;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.close:hover {
+  transform: rotate(180deg);
+  color: #a915b8;
+}
+
+.deleteAll {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.deleteAll button {
+  width: 150px;
+  height: 45px;
+  font-size: 1.1rem;
+  background: transparent;
+  color: #eee;
+  border-radius: 10px;
+  margin-left: 0.5rem;
+  background: linear-gradient(37deg, #a915b8, #1341af);
+  cursor: pointer;
+  outline: 2px dotted #eaeaea;
+}

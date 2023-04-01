@@ -1,0 +1,23 @@
+Icon
+===
+import Icon from 'react-native-vector-icons/dist/MaterialIcons';
+
+
+Modal
+====
+import Modal from "react-native-modal";
+
+
+
+//AsyncStorage
+import {AsyncStorage} from 'react-native';
+_storeData = async () => {
+  try {
+    await AsyncStorage.setItem(
+      '@MySuperStore:key',
+      'I like to save it.',
+    );
+  } catch (error) {
+    // Error saving data
+  }
+};

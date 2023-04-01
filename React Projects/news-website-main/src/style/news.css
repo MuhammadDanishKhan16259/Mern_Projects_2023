@@ -1,0 +1,45 @@
+.newsSection h1 {
+  text-align: center;
+  padding: 1rem;
+  background: #cec2ff;
+  color: #010c33;
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #cec2ff;
+}
+
+.card {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(1 12 51);
+  margin: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.card:hover {
+  box-shadow: 0 0 20px 0px #010c33a8;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.card h4 {
+  font-size: 1.3rem;
+  padding: 1rem;
+  color: #fff;
+  font-weight: 500;
+}

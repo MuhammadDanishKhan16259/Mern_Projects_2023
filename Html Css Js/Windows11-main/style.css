@@ -1,0 +1,498 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.not-spread{
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+   overflow: hidden;
+   font-family: sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-1{
+    width: 100%;
+    background-image: url("images/Windows-11-Wallpaper01.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.box-2{
+    width: 100%;
+    height: 50px;
+    background-color: #e0e8fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 25;
+}
+.box-2 .bottom-box-1{
+    /* border: 2px solid red; */
+    width: 200px;
+    height: 25px;
+}
+.bottom-box-2{
+    position: absolute;
+    bottom: 0px;
+    right: 15px;
+}
+.box-2 .bottom-box-2{
+    /* border: 2px solid red; */
+    width: 200px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.box-2 .bottom-box-2 .side-box{
+    color: #000;
+    /* border: 2px solid red; */
+    width: 90px;
+    height: 20px;
+    text-align: center;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+.box-2 .bottom-box-2 .side-box-1{
+    color: #000;
+    /* border: 2px solid red; */
+    width: 90px;
+    height: 20px;
+    text-align: end;
+    font-size: 13px;
+    font-family: sans-serif;
+    text-align: center;
+}
+.box-2 .bottom-box-2 .center{
+    position: relative;
+    bottom: -3.5px;
+}
+.box-2 .bottom-box-2 .icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.box-2 .bottom-box-2 .icons p{
+    margin-right: 7px;
+    color: rgb(43, 40, 40);
+    font-size: 14px;
+    cursor: pointer;
+}
+.window{
+    position: absolute;
+    bottom: 45px;
+    right: 175px;
+    background-color: rgba(20, 19, 19, 0.788);
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    background-color: #000;
+}
+.fa-shield-alt{
+    color: rgb(238, 231, 231);
+    margin-top: 13px;
+}
+.window1.active{
+    display: block;
+}
+/* .window1{
+    display: none;
+} */
+
+.bottom-box-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.icon-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+    /* border: 2px solid red; */
+}
+.icon-section p{
+    padding: 7px 10px;
+    /* border: 2px solid red; */
+    margin: 0 0px;
+    /* cursor: pointer; */
+    transition: 0.2s;
+}
+.icon-section p:hover{
+    background-color: rgb(2 32 94 / 22%);
+}
+.icon-section .microsoft-6{
+    padding: 8px 10px;
+}
+.icon-section .microsoft-1 .fas{
+    font-size: 25px;
+    color: rgba(20, 19, 19, 0.877);
+    transform: rotate(95deg);
+    height: auto;
+    padding: 3px 3px;
+}
+.bottom-box-1 .menu-bar p{
+    padding: 5px 10px;
+    /* padding-bottom: 0px; */
+    padding-top: 9px;
+    /* border: 2px solid red; */
+}
+.bottom-box-1 .menu-bar p:hover{
+    background-color: rgb(2 32 94 / 22%);
+
+}
+.box-1 p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-1 p{
+    margin: 3px;
+    padding: 6px;
+    width: 80px;
+    height: 75px;
+    transition: 0.5s;
+    margin-bottom: 13px !important;
+}
+.box-1 p:hover{
+    background-color: rgb(2 32 94 / 22%);
+}
+.box-1 p span{
+    font-size: 14px;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.829);
+    padding-top: 6px;
+}
+.startBar{
+    position: absolute;
+    bottom: -630px;/*-60px*/
+    left: 400px;
+    transition: all 0.3s ease-in;
+    /* border: 2px solid red; */
+}
+.apps .apps1 ul{
+    display: inline-flex;
+}
+.apps .apps1 ul li{
+    list-style: none;
+    /* padding: 10px; */
+    /* border: 2px solid red; */
+    width: 81px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.apps .apps1 ul li:hover{
+    background-color: rgb(2 32 94 / 22%);
+}
+.apps .apps1 ul li span{
+    font-size: 12px;
+    padding-top: 5px;
+}
+.apps .apps2 ul{
+    display: inline-flex;
+}
+.apps .apps2 ul li{
+    list-style: none;
+    /* padding: 10px; */
+    width: 81px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.apps .apps2 ul li:hover{
+    background-color: rgb(2 32 94 / 22%);
+}
+.apps .apps2 ul li span{
+    font-size: 12px;
+    padding-top: 5px;
+}
+.apps .apps3 ul{
+    display: inline-flex;
+}
+.apps .apps3 ul li{
+    list-style: none;
+    /* padding: 10px; */
+    width: 81px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.apps .apps3 ul li:hover{
+    background-color: rgb(2 32 94 / 22%);
+}
+.apps .apps3 ul li span{
+    font-size: 12px;
+    padding-top: 5px;
+}
+.recomed .recomed1 ul{
+    display: inline-flex;
+}
+.recomed .recomed1 ul li{
+    list-style: none;
+}
+.recomed .recomed1 ul li:hover{
+    background-color: rgb(2 32 94 / 22%);
+    border-radius: 5px;
+}
+.recomed .recomed2 ul{
+    display: inline-flex;
+}
+.recomed .recomed2 ul li{
+    list-style: none;
+}
+.recomed .recomed2 ul li:hover{
+    background-color: rgb(2 32 94 / 22%);
+    border-radius: 5px;
+}
+.recomed .recomed3 ul li{
+    list-style: none;
+}
+.recomed .recomed3 ul li:hover{
+    background-color: rgb(2 32 94 / 22%);
+    border-radius: 5px;
+}
+.recomed .recomed3 ul{
+    display: inline-flex;
+}
+.start1{
+    width: 535px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e8fd;
+    border-radius: 10px;
+    /* transition: all 0.3s ease-in; */
+}
+
+.conatiner-start1{
+    width: 95%;
+    /* border: 2px solid red; */
+
+}
+.start1 .start1-top{
+    width: 93%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    /* border: 2px solid red; */
+}
+.start1 .start1-top button{
+    width: 79px;
+    height: 23px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #0b0b0bfa;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 2px 2px #d5d8d8;
+    border-radius: 5px;
+    background-color: #ffffffe6;
+    font-size: 13px;
+}
+.start1 .start1-top p{
+    font-weight: 600;
+    color: rgb(34, 32, 32);
+}
+.start1 .recommended{
+    width: 93%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin-left: 16px;
+    /* border: 2px solid red; */
+
+}
+.start1 .recommended button{
+    width: 79px;
+    height: 23px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #0b0b0bfa;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 2px 2px #d5d8d8;
+    border-radius: 5px;
+    background-color: #ffffffe6;
+    font-size: 13px;
+}
+.start1 .recommended p{
+    font-weight: 600;
+    color: rgb(34, 32, 32);
+    font-size: 16px;
+}
+.recomed{
+    padding: 25px 0;
+    margin-left: 10px;
+}
+.recomed .recomed1 ul{
+    width: 100%;
+}
+.recomed .recomed1 ul li{
+    width: 50%;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 7px;
+}
+.recomed .recomed1 ul li .subtitle{
+    display: flex;
+    flex-direction: column;
+    padding-left: 8px;
+}
+.recomed .recomed1 ul li .subtitle span.html{
+    font-size: 13px;
+    padding-bottom: 2px;
+    font-weight: 600;
+    color: rgb(15, 15, 15);
+}
+.recomed .recomed1 ul li .subtitle span{
+    font-size: 12px;
+    color: rgba(22, 21, 21, 0.925);
+}
+.recomed .recomed2 ul{
+    width: 100%;
+}
+.recomed .recomed2 ul li{
+    width: 50%;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 7px;
+}
+
+.recomed .recomed2 ul li .subtitle1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 8px;
+}
+.recomed .recomed2 ul li .subtitle1 span.python{
+    font-size: 13px;
+    padding-bottom: 2px;
+    font-weight: 600;
+    color: rgb(15, 15, 15);
+}
+.recomed .recomed2 ul li .subtitle1 span{
+    font-size: 12px;
+    color: rgba(22, 21, 21, 0.925);
+}
+
+.recomed .recomed3 ul{
+    width: 100%;
+}
+.recomed .recomed3 ul li{
+    width: 50%;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 7px;
+}
+
+.recomed .recomed3 ul li .subtitle2{
+    display: flex;
+    flex-direction: column;
+    padding-left: 8px;
+}
+.recomed .recomed3 ul li .subtitle2 span.office{
+    font-size: 13px;
+    padding-bottom: 2px;
+    font-weight: 600;
+    color: rgb(15, 15, 15);
+}
+.recomed .recomed3 ul li .subtitle2 span{
+    font-size: 12px;
+    color: rgba(22, 21, 21, 0.925);
+}
+.info-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.info-bottom::before{
+    content: "";
+    position: absolute;
+    top: -17px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #c4d3f8;
+}
+.info-bottom .mirzaban{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.info-bottom .mirza{
+    width: 35px;
+    height: 35px;
+    background-image: url('images/mirzaban.jpg');
+    background-size: cover;
+    display: block;
+    border-radius: 50%;
+}
+.info-bottom .mirzaban span{
+    padding-left: 10px;
+    font-size: 14px;
+}
+.show-hidden-icon{
+    position: absolute;
+    bottom: -245px;/*45px*/
+    right: 135px;
+    width: 130px;
+    height: 135px;
+    /* border: 2px solid red; */
+    background-color: #e0e8fd;
+    transition: all 0.3s ease-in;
+}
+.hidden-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.hidden-1 p{
+    padding: 11.6px;
+}
+.hidden-1 p:hover{
+    background-color: rgb(2 32 94 / 22%);
+}

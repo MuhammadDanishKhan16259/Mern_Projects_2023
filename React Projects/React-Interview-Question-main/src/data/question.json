@@ -1,0 +1,29 @@
+{
+  "ReactQuestion": [
+    {
+      "id": 1,
+      "question": "What is React JS?",
+      "answer": "React JS is a liberary of JS which is used for building Single Page Application (SAP)React JS developed in 2013 by Facebook developer for manage Facebook in 2014 it allow to use any developer in his project."
+    },
+    {
+      "id": 2,
+      "question": "What is JSX?",
+      "answer": "JSX is a syntax extension of JavaScript. It is used with React to describe what the user interface should look like. By using JSX, we can write HTML structures in the same file that contains JavaScript code."
+    },
+    {
+      "id": 3,
+      "question": "Can web browsers read JSX directly?",
+      "answer": "1) Web browsers cannot read JSX directly. This is because they are built to only read regular JS objects and JSX is not a regular JavaScript object 2) For a web browser to read a JSX file, the file needs to be transformed into a regular JavaScript object. For this, we use Babel"
+    },
+    {
+      "id": 4,
+      "question": "What is the virtual DOM?",
+      "answer": "DOM stands for Document Object Model. The DOM represents an HTML document with a logical tree structure. Each branch of the tree ends in a node, and each node contains objects. React keeps a lightweight representation of the real DOM in the memory, and that is known as the virtual DOM. When the state of an object changes, the virtual DOM changes only that object in the real DOM, rather than updating all the objects."
+    },
+    {
+      "id": 5,
+      "question": "Explain how lists work in React",
+      "answer": "1) We create lists in React as we do in regular JavaScript. Lists display data in an ordered format 2) The traversal of lists is done using the map() function."
+    }
+  ]
+}

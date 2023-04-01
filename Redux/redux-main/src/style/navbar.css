@@ -1,0 +1,27 @@
+.navbar {
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .leftSide .heading {
+    font-size: 1.3rem;
+}
+
+.rightSide ul {
+    display: flex;
+    list-style: none;
+}
+.rightSide ul li {
+    padding: 1rem;
+    background: #ccc;
+    margin: .5rem;
+    border-radius: 10px;
+}
+.rightSide ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}

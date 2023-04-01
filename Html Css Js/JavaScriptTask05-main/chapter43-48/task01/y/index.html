@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript || Chapter 43-48 Practice</title>
+
+    <!-- style -->
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            font-family: sans-serif;
+            font-size: 1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            width: 200px;
+            height: 60px;
+            border-radius: 15px;
+            border: 2px solid rgb(6, 89, 243);
+            outline: none;
+            font-size: 1.5em;
+            color: #fff;
+            text-transform: uppercase;
+            background-color: rgb(23, 125, 243);
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover{
+            color: rgb(6, 89, 243);
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- button -->
+    <button class="btn">Click me</button>
+
+    <script>
+        // select button
+        let button = document.querySelector(".btn");
+        // and it is call here when user click into button
+        button.addEventListener("click", btnAction);
+        // function display messgae when user call it
+        function btnAction () {
+            alert("What are you doing?");
+        }
+
+    </script>
+</body>
+</html>

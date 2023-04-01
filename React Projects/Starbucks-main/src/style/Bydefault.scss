@@ -1,0 +1,22 @@
+.byDefault {
+  height: 100%;
+  padding: 1.5rem;
+  h1 {
+    color: #12221e;
+    font-size: 1.5rem;
+  }
+  p {
+    width: 500px;
+    padding: 1rem 0;
+  }
+  h4 {
+    font-size: 0.9rem;
+    color: #333;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .byDefault p {
+    width: 100%;
+  }
+}

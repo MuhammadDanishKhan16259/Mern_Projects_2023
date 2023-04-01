@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <style>
+        table{
+            margin: 1em 0;
+        }
+        table thead tr{
+            text-align: center;
+            font-family: sans-serif;
+            background-color: #333333;
+            color: #fff;
+        }
+        table thead tr td{
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        table thead tr td:first-child{
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        table thead tr td:last-child{
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        table thead tr td a{
+            text-decoration: none;
+            color: #fff;
+        }
+        table thead tr td.active{
+            background-color: rgb(10, 160, 23);
+        }
+        form{
+            display: flex;
+            justify-content: center;
+        }
+        fieldset{
+            width: 450px;
+            font-family: sans-serif;
+            padding: 1em;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-color: #0aa017;
+        }
+        fieldset legend{
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            border: 2px solid #0aa017;
+            padding: 5px 15px;
+        }
+        fieldset label p{
+            margin: 5px 0;
+        }
+        fieldset label input{
+            width: 95%;
+            padding-left: 10px;
+            height: 25px;
+            margin-bottom: 15px;
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .button .center{
+            margin: 3em 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 400px;
+        }
+        .button .center .back a{
+            padding: 9px 50px;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background-color: #0aa017;
+            font-family: sans-serif;
+            border-radius: 50px;
+            font-weight: 600;
+            border: 2px solid #0aa017;
+            box-shadow: 0 0 2px 2px #94f094;
+            transition: 0.3s;
+        }
+        .button .center .back a:hover{
+            color: #0aa017;
+            background-color: #fff;
+        }
+        .button .center .next a{
+            padding: 9px 50px;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background-color: #0aa017;
+            font-family: sans-serif;
+            border-radius: 50px;
+            font-weight: 600;
+            border: 2px solid #0aa017;
+            box-shadow: 0 0 2px 2px #94f094;
+            transition: 0.3s;
+        }
+        .button .center .next a:hover{
+            color: #0aa017;
+            background-color: #fff;
+        }
+        input[type="number"]{
+            width: 30px;
+            color: #000;
+        }
+        .cnic{
+            margin: 17px 0;
+        }
+        .button .center .next .none1{
+            pointer-events: none;
+        }
+        .button .center .next .none1.none2{
+            pointer-events: visible;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <table width="600px" height="50px" cellspacing="0">
+            <thead>
+                <tr>
+                    <td><a href="">Step 1: Accounts</a></td>
+                    <td><a href="">Step 2: Personal Details</a></td>
+                    <td class="active"><a href="review.html">Step 3: Your Review</a></td>
+                </tr>
+            </thead>
+        </table>
+    </center>
+    <br>
+    <br>
+    <form action="">
+        <fieldset >
+            <legend>Reviews</legend>
+            <label for="">
+                <p>First Name:</p> 
+                <input type="text" required >
+            </label>
+            <label for="">
+                <p>Last Name:</p> 
+                <input type="text" required>
+            </label>
+            <label for="">
+                <p class="cnic">CNIC:</p> 
+                <input type="number" required >
+                <input type="number" required >
+                <input type="number" required >
+                <input type="number" required >
+                <input type="number" required >
+                <span>-</span>
+                <input type="number" required >
+                <input type="number" required >
+                <input type="number" required >
+                <input type="number" required >
+                <input type="number" required >
+                <input type="number" required >
+                <input type="number" required >
+                <span>-</span>
+                <input type="number" required >
+            </label>
+            <label for="">
+                <p>Social Link:</p> 
+                <input type="text" placeholder="Enter Facebook/LinkedIn profile link" required oninput="mirza(this)">
+            </label>
+            <label for="">
+                <p style="color: #333;"><span style="color: red;">*</span> Before you go next step fill out all information.</p>
+            </label>
+        </fieldset>
+    </form>
+    <div class="button">
+        <div class="center">
+            <div class="back">
+                <a href="personalDetails.html">Back</a>
+            </div>
+            <div class="next">
+                <a href="thanks.html" class="none1">Submit</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        let none1 = document.querySelector(".none1")
+        function mirza(element){
+            var x = element.value;
+            if(x !== " " || !isNaN(x) || x > 0){
+                none1.classList.add("none2")
+            }
+            console.log(x);
+        }
+    </script>
+</body>
+</html>

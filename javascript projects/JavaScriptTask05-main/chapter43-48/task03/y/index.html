@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript || Chapter 43-48 task 03</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: 0.5s;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+        }
+        table{
+            width: 500px;
+            border: 1px solid rgb(41, 40, 40);
+            border-collapse: collapse;
+        }
+        th{
+            padding: 1em ;
+            font-size: 1.2em;
+            color: rgb(24, 22, 22);
+        }
+        td{
+            padding: 0.5em;
+            font-size: 1.2em;
+            text-align: center;
+        }
+        button{
+            font-size: 1em;
+            height: 30px;
+            width: 80px;
+            background-color: rgb(255, 93, 93);
+            color: #eee;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover{
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <table border="2px">
+            <tr>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Class</th>
+            </tr>
+            <tbody class="tBody">
+                <tr>
+                    <td>0</td>
+                    <td>Jhone</td>
+                    <td>10</td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Mirzaban</td>
+                    <td>11</td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Mirza</td>
+                    <td>11</td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Mir</td>
+                    <td>09</td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Sameer</td>
+                    <td>10</td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Obada</td>
+                    <td>14</td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Ather</td>
+                    <td>8</td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Aliyan</td>
+                    <td>11</td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Hammad</td>
+                    <td>11</td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Burhan</td>
+                    <td>11</td>
+                    <td><button>Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        let Tbody = document.querySelectorAll(".tBody tr");
+        Tbody.forEach((e)=> {
+            let btn = e.children[3];
+            btn.addEventListener("click", ()=>{
+                btn.parentNode.remove();
+            })
+        })
+    </script>
+</body>
+</html>

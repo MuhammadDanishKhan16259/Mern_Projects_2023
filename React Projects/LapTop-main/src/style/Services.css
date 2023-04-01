@@ -1,0 +1,56 @@
+.cover1 {
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(
+      rgb(47 131 166 / 55%),
+      rgb(102 43 109 / 55%),
+      rgb(164 98 39 / 55%),
+      rgb(130 29 24 / 55%)
+    ),
+    url(../images/services.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.cover1 h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+.cover1 p {
+  width: 500px;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #fff;
+  padding: 0.5rem 0;
+}
+.cover1 button {
+  width: 150px;
+  height: 50px;
+  background-color: #000;
+  color: #eee;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: 0.5s;
+  border: 2px solid transparent;
+}
+.cover1 button:hover {
+  border-top-color: #662b6d;
+  border-bottom-color: #f8943c;
+  border-left-color: #2f83a6;
+  border-right-color: #df332a;
+  box-shadow: 0 0 0px 2px #eee;
+}
+
+@media screen and (max-width: 550px) {
+  .cover1 p {
+    width: 100%;
+  }
+}

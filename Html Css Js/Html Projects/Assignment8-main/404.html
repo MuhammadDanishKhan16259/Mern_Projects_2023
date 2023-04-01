@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 error</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .message{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .message h1{
+            font-size: 4.5em;
+            padding: 0.2em 0;
+            font-family: sans-serif;
+        }
+        .message p{
+            font-family: sans-serif;
+            padding: 0.3em 0;
+        }
+        .message img{
+            margin: 1em 0;
+        }
+        .message a{
+            padding: 10px 30px;
+            background-color: #665df2;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 1.1em;
+            transition: 0.3s;
+        }
+        .message a:hover{
+            box-shadow: 0 0 2px 2px #ccc;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="message">
+            <h1>Oops!</h1>
+            <p style="color: rgb(255, 0, 0); font-weight: 600;">Error 404-Page Not Found</p>
+            <p>The page you requested could not be found.</p>
+            <p>We're working on it <span style="color: #665df2;font-weight: 800;">:)</span></p>
+            <img src="./images/message.svg" alt="" width="400px">
+            <a href="index.html">Go back</a>
+        </div>
+    </section>
+</body>
+</html>

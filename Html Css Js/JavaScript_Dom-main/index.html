@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Store || JavaScript DOM Practice || Shaykh Mirzaban</title>
+    <!-- css external file link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <section class="navbar">
+      <select class="company" onchange="data(this)">
+        <!-- <option>Apple</option>
+        <option>Samsung</option>
+        <option>Infinix</option>
+        <option>Huwavi</option> -->
+      </select>
+    </section>
+    <section class="cover">
+      <div class="content">
+        <h1 class="companyName">Samsung</h1>
+        <input type="search" placeholder="Enter value here" class="searchArea" />
+        <button onclick="search()">Search</button>
+      </div>
+    </section>
+    <section class="search">
+      <div class="heading">
+        <h1>Search Value</h1>
+      </div>
+      <div class="searchValue">
+        <div class="value">
+          <img src="./images/search1.jpg" alt="not found" class="searchProductImage"/>
+          <div class="content">
+            <button class="searchProductName">Samsung</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cards">
+        <div class="heading">
+            <h1>Samsung phones</h1>
+        </div>
+        <div class="allCards">
+            <!-- <div class="card1">
+                <img src="./images/card1.jpg" alt="">
+                <button>Samsung Galaxy F13</button>
+            </div> -->
+        </div>
+    </section>
+    <section class="footer">
+        <h4>Copyright © 2022 Shaykh Mirzaban All rights reserved</h3>
+    </section>
+
+    <!-- JavaScript External File Link -->
+    <script src="app.js"></script>
+  </body>
+</html>

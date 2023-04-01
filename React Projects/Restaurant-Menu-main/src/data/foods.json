@@ -1,0 +1,299 @@
+{
+    "Foods": [
+      {
+        "popular": [
+          {
+            "name": "Chicken Briyani",
+            "detail": "Net weight half kg",
+            "image": "./images/popular/pic1.jpg",
+            "price": 330
+          },
+          {
+            "name": "Beef Briyani",
+            "detail": "Net weight half kg",
+            "image": "./images/popular/pic2.jpg",
+            "price": 400
+          },
+          {
+            "name": "beef Pulao",
+            "detail": "Net weight half kg",
+            "image": "./images/popular/pic3.jpg",
+            "price": 400
+          },
+          {
+            "name": "Gol Gappay",
+            "detail": "12 Pieces",
+            "image": "./images/popular/pic4.jpg",
+            "price": 220
+          },
+          {
+            "name": "Mix Chart",
+            "detail": "Serves 1",
+            "image": "./images/popular/pic5.jpg",
+            "price": 220
+          }
+        ],
+        "SpecialItems": [
+          {
+            "name": "Beef Qorma",
+            "image": "./images/special items/pic1.jpg",
+            "price": 420
+          },
+          {
+            "name": "Chicken Handi Bonless",
+            "image": "./images/popular/pic2.jpg",
+            "detail": "Flavor explosion made by high heat, chicken, herbs, spices, and lots of...",
+            "price": 1300
+          }
+        ],
+        "Chicken Chargha": [
+          {
+            "name": "Chicken Chargha",
+            "detail": "Meat cooked in a pot, with oil, vegetables and spices",
+            "image": "./images/chicken chargha/pic1.jpg",
+            "price": 700
+          }
+        ],
+        "Mutton Karahi": [
+          {
+            "name": "Plain Mutton Karahi",
+            "detail": "Half/Full",
+            "image": "./images/mutton karahi/pic1.jpg",
+            "price": 2000
+          },
+          {
+            "name": "Mutton White Karahi",
+            "detail": "Half/Full",
+            "image": "./images/mutton karahi/pic2.jpg",
+            "price": 2100
+          }
+        ],
+        "Chicken Karahi": [
+          {
+            "name": "Plain Chicken Karahi",
+            "detail": "Half/Full",
+            "image": "./images/chicken karahi/pic1.jpg",
+            "price": 950
+          },
+          {
+            "name": "Chicken White Karahi",
+            "detail": "Half/Full",
+            "image": "./images/chicken karahi/pic2.jpg",
+            "price": 1000
+          },
+          {
+            "name": "Chicken Peshawari Karahi",
+            "detail": "Half/Full",
+            "image": "./images/chicken karahi/pic3.jpg",
+            "price": 1000
+          }
+        ],
+        "Biryani & Pulao": [
+          {
+            "name": "Chicken Biryani",
+            "detail": "Net weight half kg",
+            "image": "./images/popular/pic1.jpg",
+            "price": "330"
+          },
+          {
+            "name": "Beef Beryani",
+            "detail": "Net weight half kg",
+            "image": "./images/popular/pic2.jpg",
+            "price": 400
+          },
+          {
+            "name": "Beef Pulao",
+            "detail": "Net weight half kg",
+            "image": "./images/popular/pic3.jpg",
+            "price": 400
+          }
+        ],
+        "Bar BQ": [
+          {
+            "name": "Chicken Tikka Leg",
+            "detail": "Serves 1",
+            "image": "./images/bar bq/pic1.jpg",
+            "price": 400
+          },
+          {
+            "name": "Chicken Tikka Chest",
+            "detail": "Serves 1",
+            "image": "./images/bar bq/pic2.jpg",
+            "price": 460
+          },
+          {
+            "name": "Chicken Bihari Boti",
+            "detail": "Serves 1",
+            "image": "./images/bar bq/pic3.jpg",
+            "price": 500
+          },
+          {
+            "name": "Beef Behari Boti",
+            "detail": "Serves 1",
+            "image": "./images/bar bq/pic4.jpg",
+            "price": 520
+          }
+        ],
+        "Rolls": [
+          {
+            "name": "Shawarma Roll",
+            "detail": "Chicken",
+            "image": "./images/rolls/pic1.jpg",
+            "price": 250
+          },
+          {
+            "name": "Mayo Roll",
+            "detail": "Serves 1",
+            "image": "./images/rolls/pic2.jpg",
+            "price": 200
+          },
+          {
+            "name": "Chutney Roll",
+            "detail": "Serves 1",
+            "image": "./images/rolls/pic3.jpg",
+            "price": 200
+          }
+        ],
+        "Kabab": [
+          {
+            "name": "Reshami Kabab",
+            "detail": "Serves 1",
+            "image": "./images/kabab/pic1.jpg",
+            "price": 480
+          },
+          {
+            "name": "Seekh Kabab",
+            "detail": "Serves 1",
+            "image": "./images/kabab/pic2.jpg",
+            "price": 520
+          },
+          {
+            "name": "Beef Behari Kabab",
+            "detail": "Serves 1",
+            "image": "./images/kabab/pic3.jpg",
+            "price": 520
+          }
+        ],
+        "Savouries": [
+          {
+            "name": "Gol Gappay",
+            "detail": "12 Pieces",
+            "image": "./images/savouries/pic1.jpg",
+            "price": 220
+          },
+          {
+            "name": "Mix Chart",
+            "detail": "Serves 1",
+            "image": "./images/savouries/pic2.jpg",
+            "price": 220
+          },
+          {
+            "name": "Dahi Bhallay",
+            "detail": "Serves 1",
+            "image": "./images/savouries/pic3.jpg",
+            "price": 220
+          }
+        ],
+        "Tandoor": [
+          {
+            "name": "Puri Paratha",
+            "image": "./images/tandoor/pic1.jpg",
+            "price": 120
+          }
+        ],
+        "Ice Cream": [
+          {
+            "name": "Caramel Crunch Ice Cream",
+            "detail": "Single Scoop/2 Scoops/Half Liter/Family Pack",
+            "image": "./images/ice creame shakes/pic1.jpg",
+            "price": 110
+          },
+          {
+            "name": "White Vanilla Ice Cream",
+            "detail": "Single Scoop/2 Scoops/Half Liter/Family Pack",
+            "image": "./images/ice creame shakes/pic2.jpg",
+            "price": 110
+          },
+          {
+            "name": "Blueberry Ice Cream",
+            "detail": "Single Scoop/2 Scoops/Half Liter/Family Pack",
+            "image": "./images/ice creame shakes/pic3.jpg",
+            "price": 110
+          },
+          {
+            "name": "Strawberry Cheese Cake Ice Cream",
+            "detail": "Single Scoop/2 Scoops/Half Liter/Family Pack",
+            "image": "./images/ice creame shakes/pic4.jpg",
+            "price": 110
+          },
+          {
+            "name": "Chocolate Brownies Ice Cream",
+            "detail": "Single Scoop/2 Scoops/Half Liter/Family Pack",
+            "image": "./images/ice creame shakes/pic5.jpg",
+            "price": 110
+          },
+          {
+            "name": "Chocolate Chips Ice Cream",
+            "detail": "Single Scoop/2 Scoops/Half Liter/Family Pack",
+            "image": "./images/ice creame shakes/pic6.jpg",
+            "price": 110
+          },
+          {
+            "name": "Mango Ice Cream",
+            "detail": "Single Scoop/2 Scoops/Half Liter/Family Pack",
+            "image": "./images/ice creame shakes/pic7.jpg",
+            "price": 110
+          },
+          {
+            "name": "Tutti Frutti Ice Cream",
+            "detail": "Single Scoop/2 Scoops/Half Liter/Family Pack",
+            "image": "./images/ice creame shakes/pic8.jpg",
+            "price": 109
+          },
+          {
+            "name": "Kulfa Ice Cream",
+            "detail": "Single Scoop/2 Scoops/Half Liter/Family Pack",
+            "image": "./images/ice creame shakes/pic9.jpg",
+            "price": 110
+          },
+          {
+            "name": "Bounty Ice Cream",
+            "detail": "Single Scoop/2 Scoops/Half Liter/Family Pack",
+            "image": "./images/ice creame shakes/pic10.jpg",
+            "price": 110
+          },
+          {
+            "name": "Cadbury Ice Cream",
+            "detail": "Single Scoop/2 Scoops/Half Liter/Family Pack",
+            "image": "./images/ice creame shakes/pic11.jpg",
+            "price": 110
+          },
+          {
+            "name": "Blackberry Ice Cream",
+            "detail": "Single Scoop/2 Scoops/Half Liter/Family Pack",
+            "image": "./images/ice creame shakes/pic12.jpg",
+            "price": 110
+          },
+          {
+            "name": "Pistachio Ice Cream",
+            "detail": "Single Scoop/2 Scoops/Half Liter/Family Pack",
+            "image": "./images/ice creame shakes/pic13.jpg",
+            "price": 110
+          },
+          {
+            "name": "Pineapple Ice Cream",
+            "detail": "Single Scoop/2 Scoops/Half Liter/Family Pack",
+            "image": "./images/ice creame shakes/pic14.jpg",
+            "price": 110
+          },
+          {
+            "name": "Strawberry Ice Cream",
+            "detail": "Single Scoop/2 Scoops/Half Liter/Family Pack",
+            "image": "./images/ice creame shakes/pic15.jpg",
+            "price": 110
+          }
+        ]
+      }
+    ]
+  }
+  

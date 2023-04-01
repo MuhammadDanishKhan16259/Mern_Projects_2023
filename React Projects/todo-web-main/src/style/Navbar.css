@@ -1,0 +1,40 @@
+header {
+  width: 100%;
+  height: 70px;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #201521;
+  color: #eee;
+  border-bottom: 1px solid #fb05ff;
+}
+header .heading {
+  font-size: 1.7rem;
+  color: #eee;
+  text-shadow: -3px -4px #8d099b;
+}
+header .center-text {
+  font-size: 1.4rem;
+  color: #b9a8cf;
+  font-weight: normal;
+}
+header .left-side-content {
+  color: #b9a8cf;
+}
+header .left-side-content .currentTime {
+  padding: 0.2rem 0;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    height: auto;
+    flex-direction: column;
+  }
+  header .heading {
+    padding: 0.5rem 0;
+  }
+  header .left-side-content {
+    padding: 0.5rem 0;
+  }
+}

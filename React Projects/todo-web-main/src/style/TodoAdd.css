@@ -1,0 +1,48 @@
+.addBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+.addBar input {
+  width: 100%;
+  width: 500px;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  background: transparent;
+  border: 2px solid #a117b6;
+  outline: 2px solid #1341af;
+  border-radius: 10px;
+  margin: 0 0.5rem;
+  color: #eee;
+  background-color: #eeeeee0f;
+}
+.addBar button {
+  width: 150px;
+  height: 45px;
+  font-size: 1.1rem;
+  background: transparent;
+  color: #eee;
+  border-radius: 10px;
+  margin-left: 0.5rem;
+  background: linear-gradient(37deg, #a915b8, #1341af);
+  cursor: pointer;
+  outline: 2px dotted #eaeaea;
+}
+.addBar button:hover {
+  background: linear-gradient(37deg, #1341af, #a915b8);
+}
+
+@media screen and (max-width: 600px) {
+  .addBar {
+    flex-direction: column;
+  }
+  .addBar input {
+    width: 90%;
+  }
+  .addBar button {
+    margin: 1.5rem 0;
+  }
+}

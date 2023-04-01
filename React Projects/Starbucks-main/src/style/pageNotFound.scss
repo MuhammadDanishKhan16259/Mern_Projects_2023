@@ -1,0 +1,41 @@
+.pageNotFound {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+
+  h1 {
+    font-size: 4rem;
+    padding: 1rem 0;
+    color: #006341;
+  }
+  p {
+    color: #d84040;
+    padding: 0.5rem 0;
+    font-weight: 600;
+  }
+  .text {
+    font-size: 1rem;
+    color: #333;
+    font-weight: normal;
+  }
+  button {
+    width: 130px;
+    height: 40px;
+    font-size: 1rem;
+    border-radius: 50px;
+    border: 2px solid #006341;
+    color: #006341;
+    background: transparent;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .pageNotFound .text {
+    width: 90%;
+    text-align: center;
+  }
+}

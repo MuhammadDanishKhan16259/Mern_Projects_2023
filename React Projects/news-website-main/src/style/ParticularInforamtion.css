@@ -1,0 +1,116 @@
+.particularInformation {
+  width: 100%;
+  display: flex;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2rem;
+  width: 65%;
+  background: #02051d;
+}
+.information button {
+  width: 120px;
+  height: 40px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  background: #cec2ff;
+  color: #02051d;
+  cursor: pointer;
+}
+.top__part {
+  padding: 1rem 0;
+}
+.top__part h1 {
+  font-size: 2.5rem;
+  /* font-weight: 900; */
+  padding: 0.5rem 0;
+  color: #fff;
+}
+.top__part h4 {
+  font-size: 1rem;
+  color: #eee;
+  padding: 0.5rem 0;
+}
+img {
+  border-radius: 10px;
+  width: 700px;
+}
+.content {
+  padding: 2rem 0;
+}
+.content p {
+  padding: 1rem 0;
+  font-size: 1.3rem;
+  color: #eee;
+}
+.information .bottomCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.right__side {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem 0;
+  background: #cec2ff;
+}
+.right__side h1 {
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+
+.footer {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 1170px) {
+  .particularInformation {
+    flex-direction: column;
+  }
+  .information {
+    width: 100%;
+  }
+  .right__side {
+    padding: 1rem;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .right__side {
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    width: 95%;
+  }
+  .top__part h1 {
+    font-size: 2rem;
+  }
+  .content p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .top__part h1 {
+    font-size: 1.6rem;
+  }
+}

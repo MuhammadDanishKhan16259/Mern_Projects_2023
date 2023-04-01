@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+section{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.left-side-bar{
+    width: 25%;
+    /* height: 100vh; */
+    /* position: fixed; */
+    background-color: #390099;
+    border-radius: 10px;
+    margin: 0.5em;
+}
+.left-side-bar .main-heading{
+    text-align: center;
+    padding-top: 1.5em;
+    color: #fff;
+    text-transform: capitalize;
+}
+.left-side-bar .back{
+        margin: 1em;
+}
+.left-side-bar .back a{
+    text-decoration: none;
+    padding: 15px 25px;
+    background-color: #fc9524;
+    color: #0f0f0f;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 10px;
+}
+.all-student-name ul{
+    padding: 2em;
+}
+.all-student-name ul li{
+    padding: 5px;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+.all-student-name ul .active::marker{
+    color: red;
+    list-style: disc;
+}
+.all-student-name ul .active{
+    background-color: rgba(255, 255, 255, 0.472);
+    border-radius: 5px;
+}
+.all-student-name ul li:hover{
+    background-color: rgba(255, 255, 255, 0.472);
+    border-radius: 5px;
+}
+.all-student-name ul li a{
+    color: #eee;
+}
+.right-main-heading{
+    margin: 1em;
+}
+.right-main-heading h1{
+    font-size: 2.7em;
+    color: #292727;
+}
+.right-main-heading h2{
+    font-size: 1.5em;
+    color: #636364e3;
+}
+.right-main-heading h3{
+    font-size: 1.5em;
+    color: #6e72f0;
+}
+.children-profile{
+    margin: 2em 0 1em 1em;
+}
+.children-profile .img{
+    width: 200px;
+    height: 250px;
+    background-image: url("../images/cover7.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border: 2px solid #390099;
+    box-shadow: 0 0 4px 0px #380099d0;
+}
+.children-profile .description{
+    margin: 20px 0;
+}
+.children-profile .description h3{
+    padding: 3px 0;
+    color: #333333;
+}
+.student-chart{
+    margin: 2em 0;
+}
+.student-chart table{
+    width: 850px;
+    border: 1px solid #390099;
+    
+}
+.student-chart table tbody tr{
+    height: 40px;
+}
+.student-chart table tbody tr td{
+    text-align: center;
+}
+.right-side-content .back{
+    margin: 2em;
+}
+.right-side-content .back a{
+    text-decoration: none;
+    padding: 15px 25px;
+    background-color: #390099;
+    color: #ffffff;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 10px;
+    visibility: hidden;
+}
+@media screen and (max-width: 1140px){
+    .left-side-bar{
+        display: none;
+    }
+    .right-side-content .back a{
+        visibility: visible;
+    }
+}

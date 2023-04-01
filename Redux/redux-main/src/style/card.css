@@ -1,0 +1,42 @@
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .cardColumn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.card .cardColumn .card1 {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 0.5rem 0;
+}
+
+.card .cardColumn .card1 h4 {
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.card .cardColumn .card1 button {
+  width: 110px;
+  height: 40px;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  cursor: pointer;
+}

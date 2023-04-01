@@ -1,0 +1,255 @@
+.create {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+
+  .heading {
+    padding: 1rem 0;
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #2c2b2b;
+    }
+  }
+  .rewards {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0;
+
+    h4 {
+      color: #4d4d4d;
+    }
+    p {
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      color: #726f6f;
+    }
+  }
+
+  .box {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2.5rem;
+    box-shadow: 0 0 12px 0 #e1dfdf;
+    border-radius: 30px;
+
+    p {
+      padding: 0.5rem 0.3rem;
+      font-size: 0.9rem;
+      color: #484646;
+    }
+    .personalInfo {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 1rem;
+
+      h1 {
+        font-size: 1.3rem;
+        color: #494545;
+        padding: 1rem 0.2rem;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        input {
+          width: 100%;
+          height: 50px;
+          padding: 0.5rem 1rem;
+          border-radius: 10px;
+          font-size: 1rem;
+          color: #000;
+          margin: 0.5rem 0;
+          border: 2px solid #d5d5d5;
+          outline: none;
+        }
+      }
+    }
+
+    .accountSecurity {
+      h1 {
+        font-size: 1.3rem;
+        color: #494545;
+        padding: 0.5rem 0.2rem;
+      }
+      form {
+        .email {
+          margin: 1rem 0;
+
+          input {
+            width: 100%;
+            height: 50px;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            font-size: 1rem;
+            color: #000;
+            border: 2px solid #d5d5d5;
+            outline: none;
+
+            p {
+              padding: 0.5rem 0.3rem;
+              font-size: 0.9rem;
+              color: #484646;
+            }
+          }
+        }
+      }
+    }
+
+    .password {
+      padding: 1rem 0;
+      input {
+        width: 100%;
+        height: 50px;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        font-size: 1rem;
+        color: #000;
+        border: 2px solid #d5d5d5;
+        outline: none;
+      }
+
+      p {
+        font-size: 0.9rem;
+        color: #333;
+        padding: 0.5rem 0.2rem;
+      }
+    }
+
+    .giftCard {
+      p {
+        padding: 0.5rem 0;
+        color: #006341;
+        font-weight: 500;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+    }
+
+    .star {
+      margin: 1rem 0;
+
+      h3 {
+        font-size: 1rem;
+        color: #686868;
+        padding: 0.2rem 0;
+      }
+      p {
+        font-size: 0.9rem;
+        color: #7b8d7b;
+        padding: 0.5rem 0;
+      }
+    }
+
+    .like_email {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      margin: 1rem 0;
+
+      input {
+        width: 25px;
+        height: 35px;
+        margin: 0;
+        padding: 0;
+      }
+      .content {
+        margin: 0 0.7rem;
+
+        p {
+          font-size: 1rem;
+          color: #171616;
+          padding: 0;
+        }
+        .text {
+          font-size: 0.9rem;
+          color: #7b8d7b;
+          padding: 0.5rem 0;
+        }
+      }
+    }
+
+    .terms {
+      h1 {
+        font-size: 0.9rem;
+        color: #686a6d;
+        margin: 1rem 0;
+      }
+
+      .check {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        input {
+          width: 25px;
+          height: 35px;
+          margin: 0;
+          padding: 0;
+        }
+        p {
+          font-size: 0.9rem;
+          padding: 0 1rem;
+          width: 90%;
+          color: #6b6a6a;
+          line-height: 1.5rem;
+
+          .change {
+            color: #006341;
+            font-weight: 600;
+            text-decoration: underline;
+            cursor: pointer;
+
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+
+    .button1 {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      button {
+        width: 150px;
+        height: 50px;
+        font-size: 1rem;
+        border-radius: 50px;
+        border: none;
+        margin: 1rem 0;
+        background: #006341;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .create .box {
+    width: 90%;
+    padding: 1.5rem;
+  }
+  .create .rewards {
+    width: 90%;
+  }
+}

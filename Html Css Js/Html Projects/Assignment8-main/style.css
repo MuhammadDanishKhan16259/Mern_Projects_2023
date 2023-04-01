@@ -1,0 +1,1135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    /* transition: 0.3s; */
+}
+body.no-scroll{
+    overflow: hidden;
+}
+:root{
+    --logo-color: #f5f5f7;
+    --grey: #b6b6b7;
+    --light-black: rgba(0, 0, 0, 0.931);
+}
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+li{
+    list-style: none;
+}
+.wrapper{
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-black);
+    padding: 0.1em 0;
+}
+.desktop-screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.desktop-screen .logo a .fab{
+    color: var(--logo-color);
+    padding: 10px;
+}
+.nav ul{
+    display: inline-flex;
+}
+.nav ul li{
+    padding: 10px;
+    transition: 0.3s;
+}
+.nav ul li a{
+    padding: 10px;
+    color: var(--grey);
+    font-weight: 400;
+    font-size: 0.8em;
+    transition: 0.3s;
+}
+.nav ul li a:hover{
+    color: var(--logo-color);
+}
+.nav-icons ul{
+    display: inline-flex;
+}
+.nav-icons ul li{
+    padding: 5px;
+}
+.nav-icons ul li a{
+    color: var(--grey);
+    padding: 10px;
+    transition: 0.3s;
+}
+.nav-icons ul li a:hover{
+    color: var(--logo-color);
+}
+/* mobile screen work start */
+.mobile-screen{
+    width: 100%;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 0.7em 1em;
+    display: none;
+}
+.hamburger-icon{
+    cursor: pointer;
+}
+.hamburger-icon .hamburger-1, .hamburger-2{
+    width: 1em;
+    height: 1px;
+    background-color: #b1abab;
+    margin: 5px 0;
+}
+.apple-logo a{
+    font-size: 1.3em;
+    color: #dbd9d9;
+}
+.bag-icons a{
+    font-size: 1.1em;
+    color: #b1abab;
+}
+.log-navbar.active{
+    display: none;
+}
+.log-navbar{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 45px;
+    background-color: #000;
+    padding: 0 1em;
+    z-index: 10;
+}
+.sarch input{
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #6e6e735c;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: rgb(148, 148, 148);
+    margin-bottom: 0.5em;
+    /* border-bottom: 1px solid #ccc; */
+}
+.log-nav ul{
+    padding: 1em;
+}
+.log-nav ul li{
+    padding: 0.7em;
+    border-bottom: 1px solid rgb(84 84 84 / 79%);
+}
+.log-nav ul li a{
+    color: #bbb8b8;
+    transition: 0.3s;
+}
+.log-nav ul li a:hover{
+    color: #eee;
+}
+
+@media screen and (max-width: 1010px){
+    .nav ul li{
+        padding: 5px;
+    }
+    .nav-icons ul li{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 880px){
+    .nav ul li a{
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 775px){
+    .desktop-screen{
+        display: none;
+    }
+    .mobile-screen{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+/* navbar work closed */
+
+/* start working on message bar */
+
+.message{
+    z-index: -10;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebebeb59;
+    position: relative;
+    top: 51px;
+} 
+.pera{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.message .pera p{
+    padding: 0.9em 0;
+    color: rgb(97, 96, 96);
+    font-size: 0.9em;
+    text-align: center;
+}
+.message .pera p a{
+    color: #0681ea;
+}
+.message .pera p a:hover{
+    text-decoration: underline;
+}
+.fa-chevron-right:before{
+    font-size: 0.8em;
+}
+.cover .image{
+    width: 100%;
+    height: 560px;
+    background-image: url("./images/mainCover1.jfif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 1em;
+    margin-top: 3em;
+}
+.cover .image h1{
+    font-size: 3.5em;
+    color: #272525;
+    padding-top: 0.8em;
+    font-weight: 500;
+}
+.cover .image .oh{
+    color: #333;
+    font-size: 1.7em;
+    padding-bottom: 10px;
+}
+.link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link p a{
+    padding: 0 1em;
+    color: #0681ea;
+    font-size: 1.3em;
+}
+.link p a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width: 735px){
+    .cover .image{
+        background-image: url("./images/mainCover2.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 450px;
+    }
+    .cover .image h1{
+        font-size: 2.3em;
+        padding-top: 1em;
+    }
+    .cover .image .oh{
+        font-size: 1.5em;
+        padding: 10px 0;
+    }
+    .link p a{
+        padding: 0 1em;
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+.cover1 .image1{
+    width: 100%;
+    height: 560px;
+    background-image: url("./images/cover1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.cover1 .image1 h1{
+    font-size: 3.5em;
+    color: #eee;
+    padding-top: 0.8em;
+    font-weight: 500;
+}
+.cover1 .image1 .oh{
+    color: #fdcbfc;
+    font-size: 1.7em;
+    padding: 10px 0;
+}
+.link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cover1 .image1 .link p a{
+    padding: 0 1em;
+    color: #f9eae7;
+    font-size: 1.3em;
+}
+.link p a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width: 735px){
+    .cover1 .image1{
+        background-image: url("./images/cover2.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cover1 .image1 h1{
+        font-size: 2em;
+        padding-top: 1em;
+        margin: 0;
+    }
+    .cover1 .image1 .oh{
+        font-size: 1.1em;
+    }
+    .cover1 .image1 .link p a{
+        padding: 0 1em;
+        color: #f9eae7;
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+.cover2 .image2{
+    width: 100%;
+    height: 560px;
+    background-image: url("./images/centerCover1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.card{
+    margin-top: 5em;
+}
+.cover2 .image2 .heading{
+    font-size: 1.7em;
+    color: #19191aec;
+    padding-top: 0.8em;
+    font-weight: 400;
+}
+.cover2 .image2 .oh{
+    color: rgb(126 124 124);
+    font-size: 1em;
+    padding: 10px 0;
+}
+.link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cover2 .image2 .link p a{
+    padding: 0 1em;
+    color: #0681ea;
+    font-size: 1.3em;
+}
+.link p a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width: 735px){
+    .cover2 .image2{
+        background-image: url("./images/centerCover2.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 450px;
+        display: flex;
+        align-items: center;
+    }
+    .cover2 .image2 .heading{
+        font-size: 1.1em;
+        padding-top: 1em;
+        margin: 0;
+    }
+    .cover2 .image2 .oh{
+        font-size: 0.8em;
+    }
+    .cover2 .image2 .link p a{
+        padding: 0 1em;
+        color: #0681ea;
+        font-size: 1em;
+    }
+    .card{
+        margin-top: 3em;
+        width: 110px;
+    }
+}
+
+/* Card work start */
+.boxOne{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.boxOne .box-1 .image{
+    width: 610px;
+    height: 570px;
+    background-image: url("./images/watch\ \(1\).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 0.5em;
+    cursor: pointer;
+}
+
+.boxOne .box-2 .image{
+    width: 610px;
+    height: 570px;
+    background-image: url("./images/bubble\ \(1\).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 0.5em 1em 0;
+    cursor: pointer;
+}
+.boxOne .box-2 .image .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+.boxOne .box-2 .image .description h1{
+    font-size: 2.5em;
+    color: #222020;
+    font-weight: 600;
+}
+.boxOne .box-2 .image .description p{
+    font-size: 1.3em;
+    padding: 0.5em 0;
+    font-weight: 400;
+    color: #222121;
+}
+.boxOne .box-2 .image .description a{
+    font-size: 1.3em;
+    color: #2a2828;
+}
+.boxOne .box-2 .image .description a:hover{
+    text-decoration: underline;
+}
+.watch-detail{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+.watch-detail .new{
+    color: #e18300;
+}
+.watch-detail img{
+    padding: 0.5em 0;
+}
+.watch-detail .pera{
+    font-size: 1.3em;
+    color: #333;
+    padding: 10px 0;
+}
+.watch-detail .link p a{
+    font-size: 1.1em;
+    padding: 0 1em;
+    color: #0681ea;
+}
+@media screen and (max-width: 780px){
+    .boxOne .box-1{
+        width: 100%;
+    }
+    .boxOne .box-1 .image{
+        width: 100%;
+        margin: 1em 0em;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .boxOne .box-2{
+        width: 100%;
+    }
+    .boxOne .box-2 .image{
+        width: 100%;
+        margin: 0em 0 1em 0;
+    }
+    .boxOne .box-2 .image .description h1{
+        font-size: 2em;
+    }
+    .boxOne .box-2 .image .description p{
+        font-size: 1.1em;
+    }
+    .boxOne .box-2 .image .description a{
+        font-size: 1.1em;
+    }
+}
+/* second card */
+.boxTwo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.boxTwo .box-3 .image{
+    width: 610px;
+    height: 570px;
+    background-image: url("./images/valentineDay\ \(3\).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0em 0.5em 1em 0.5em;
+    cursor: pointer;
+}
+
+.boxTwo .box-4 .image{
+    width: 610px;
+    height: 570px;
+    background-image: url("./images/watchFront\ \(3\).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0em 0.5em 1em 0;
+    cursor: pointer;
+}
+.boxTwo .box-3 .image .valentine{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5em;
+}
+.boxTwo .box-3 .image .valentine p{
+    font-size: 1.3em;
+    padding: 0.2em;
+    color: #602d62;
+    font-weight: 400;
+}
+.boxTwo .box-3 .image .valentine h1{
+    font-size: 2.4em;
+    font-weight: 500;
+    text-align: center;
+    color: #602d62;
+}
+
+.boxTwo .box-3 .image .valentine a{
+    font-size: 1.1em;
+    padding: 0.3em;
+    color: #0681ea;
+}
+.boxTwo .box-3 .image .valentine a:hover{
+    text-decoration: underline;
+}
+.boxTwo .box-4 .image .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+    cursor: pointer;
+}
+.boxTwo .box-4 .image .description h1{
+    color: #fff;
+    font-size: 2.5em;
+}
+.boxTwo .box-4 .image .description p{
+    color: #e7e7e7;
+    padding: 0.6em 0;
+    font-size: 1.3em;
+}
+.boxTwo .box-4 .image .description .link1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxTwo .box-4 .image .description .link1 a{
+    padding: 0 1em;
+    color: #0a8af7;
+    font-size: 1.1em;
+}
+.boxTwo .box-4 .image .description .link1 a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width: 780px){
+    .boxTwo .box-3{
+        width: 100%;
+    }
+    .boxTwo .box-3 .image{
+        width: 100%;
+        margin: 0 0 1em 0; 
+    }
+    .boxTwo .box-3 .image .valentine p{
+        font-size: 1.1em;
+    }
+    .boxTwo .box-3 .image .valentine h1{
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .boxTwo .box-4{
+        width: 100%;
+    }
+    .boxTwo .box-4 .image{
+        width: 100%;
+        margin: 0 0 1em 0; 
+    }
+    .boxTwo .box-4 .image .description h1{
+        font-size: 2em;
+    }
+    .boxTwo .box-4 .image .description p{
+        font-size: 1.1em;
+    }
+}
+
+
+/* third card */
+.boxThree{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.boxThree .box-5 .image{
+    width: 610px;
+    height: 570px;
+    background-image: url("./images/appleCard.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0em 0.5em 1em 0.5em;
+    cursor: pointer;
+}
+.boxThree .box-5 .image .apple-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+.boxThree .box-5 .image .apple-card img{
+    padding: 1em 0;
+}
+.boxThree .box-5 .image .apple-card p {
+    text-align: center;
+    font-size: 1.4em;
+    color: #464444eb;
+}
+.boxThree .box-5 .image .apple-card .link1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+.boxThree .box-5 .image .apple-card .link1 a{
+    padding: 0 1em;
+    color: #0681ea;
+}
+.boxThree .box-5 .image .apple-card .link1 a:hover{
+    text-decoration: underline;
+}
+.boxThree .box-6 .image{
+    width: 610px;
+    height: 570px;
+    background-image: url("./images/poster\ \(2\).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0em 0.5em 1em 0;
+    cursor: pointer;
+}
+.boxThree .box-6 .image .description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+.boxThree .box-6 .image .description .apple-icon{
+    margin-top: 3em;
+}
+.boxThree .box-6 .image .description .apple-bottom-des{
+    margin-bottom: 2.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.boxThree .box-6 .image .description .apple-bottom-des a{
+    padding: 0.5em 0;
+}
+.boxThree .box-6 .image .description .apple-bottom-des a .fa-play-circle:before{
+    padding-left: 0.5em;
+}
+.boxThree .box-6 .image .description .apple-bottom-des a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width: 780px){
+    .boxThree .box-5{
+        width: 100%;
+    }
+    .boxThree .box-5 .image{
+        width: 100%;
+        margin: 0 0 1em 0; 
+    }
+}
+
+@media screen and (max-width: 780px){
+    .boxThree .box-6{
+        width: 100%;
+    }
+    .boxThree .box-6 .image{
+        width: 100%;
+        margin: 0 0 1em 0; 
+    }
+}
+/* start working on footer */
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebebeb59;
+    padding: 2em 0;
+}
+.footer .detail{
+    width: 75%;
+}
+.footer .detail p{
+    color: #6e6d6deb;
+    font-size: 0.9em;
+    padding: 0.5em 0;
+}
+.footer .detail p a{
+    color: #3e3b3b;
+}
+.footer .detail p a:hover{
+    text-decoration: underline;
+}
+.horizontal{
+    color: #b8b8b8;
+    width: 75%;
+    margin-top: 1em;
+}
+@media screen and (max-width: 1060px){
+    .footer .detail{
+        width: 95%;
+    }
+    .horizontal{
+        width: 95%;
+    }
+    .footer .detail p{
+        font-size: 0.8em;
+    }
+}
+.footer-navabr{
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1em 0;
+}
+.ShopandLearn ul .footerHeading{
+    font-size: 0.9em;
+    color: #464444;
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+.ShopandLearn ul .footerHeading .innerList li{
+    font-size: 0.8em !important;
+    color: #6e6b6bd1;
+    padding: 5px 0;
+}
+.ShopandLearn ul .footerHeading .innerList li a:hover{
+    text-decoration: underline;
+    text-decoration-color: #111010;
+}
+.Services ul .footerHeading1{
+    font-size: 0.9em;
+    color: #464444;
+    padding: 10px 0;
+    font-weight: 500;
+}
+.Services ul .footerHeading1 .innerList1 li{
+    font-size: 0.8em !important;
+    color: #6e6b6bd1;
+    padding: 5px 0;
+}
+.Services ul .footerHeading1 .innerList1 li a:hover{
+    text-decoration: underline;
+    text-decoration-color: #111010;
+}
+.Services ul .sub-footerHeading1{
+    font-size: 0.9em;
+    color: #464444;
+    padding: 10px 0;
+    font-weight: 500;
+}
+.Services ul .sub-footerHeading1 .sub-innerList1 li{
+    font-size: 0.8em !important;
+    color: #6e6b6bd1;
+    padding: 5px 0;
+}
+.Services ul .sub-footerHeading1 .sub-innerList1 li a:hover{
+    text-decoration: underline;
+    text-decoration-color: #111010;
+}
+.AppleStore ul .footerHeading2{
+    font-size: 0.9em;
+    color: #464444;
+    padding: 10px 0;
+    font-weight: 500;
+}
+.AppleStore ul .footerHeading2 .innerList2 li{
+    font-size: 0.8em !important;
+    color: #6e6b6bd1;
+    padding: 5px 0;
+}
+.AppleStore ul .footerHeading2 .innerList2 li a:hover{
+    text-decoration: underline;
+    text-decoration-color: #111010;
+}
+.ForBusiness ul .footerHeading3{
+    font-size: 0.9em;
+    color: #464444;
+    padding: 10px 0;
+    font-weight: 500;
+}
+.ForBusiness ul .footerHeading3 .innerList3 li{
+    font-size: 0.8em !important;
+    color: #6e6b6bd1;
+    padding: 5px 0;
+}
+.ForBusiness ul .footerHeading3 .innerList3 li a:hover{
+    text-decoration: underline;
+    text-decoration-color: #111010;
+}
+.ForBusiness ul .sub-footerHeading3{
+    font-size: 0.9em;
+    color: #464444;
+    padding: 10px 0;
+    font-weight: 500;
+}
+.ForBusiness ul .sub-footerHeading3 .sub-innerList3 li{
+    font-size: 0.8em !important;
+    color: #6e6b6bd1;
+    padding: 5px 0;
+}
+.ForBusiness ul .sub-footerHeading3 .sub-innerList3 li a:hover{
+    text-decoration: underline;
+    text-decoration-color: #111010;
+}
+.ForBusiness ul .sub-s-footerHeading3{
+    font-size: 0.9em;
+    color: #464444;
+    padding: 10px 0;
+    font-weight: 500;
+}
+.ForBusiness ul .sub-s-footerHeading3 .sub-s-innerList3 li{
+    font-size: 0.8em !important;
+    color: #6e6b6bd1;
+    padding: 5px 0;
+}
+.ForBusiness ul .sub-s-footerHeading3 .sub-s-innerList3 li a:hover{
+    text-decoration: underline;
+    text-decoration-color: #111010;
+}
+.ForBusiness ul .sub-s1-footerHeading3{
+    font-size: 0.9em;
+    color: #464444;
+    padding: 10px 0;
+    font-weight: 500;
+}
+.ForBusiness ul .sub-s1-footerHeading3 .sub-s1-innerList3 li{
+    font-size: 0.8em !important;
+    color: #6e6b6bd1;
+    padding: 5px 0;
+}
+.ForBusiness ul .sub-s1-footerHeading3 .sub-s1-innerList3 li a:hover{
+    text-decoration: underline;
+    text-decoration-color: #111010;
+}
+.AppleValues ul .footerHeading4{
+    font-size: 0.9em;
+    color: #464444;
+    padding: 10px 0;
+    font-weight: 500;
+}
+.AppleValues ul .footerHeading4 .innerList4 li{
+    font-size: 0.8em !important;
+    color: #6e6b6bd1;
+    padding: 5px 0;
+}
+.AppleValues ul .footerHeading4 .innerList4 li a:hover{
+    text-decoration: underline;
+    text-decoration-color: #111010;
+}
+.AppleValues ul .sub-footerHeading4{
+    font-size: 0.9em;
+    color: #464444;
+    padding: 10px 0;
+    font-weight: 500;
+}
+.AppleValues ul .sub-footerHeading4 .sub-innerList4 li{
+    font-size: 0.8em !important;
+    color: #6e6b6bd1;
+    padding: 5px 0;
+}
+.AppleValues ul .sub-footerHeading4 .sub-innerList4 li:hover{
+    text-decoration: underline;
+    text-decoration-color: #111010;
+}
+/* ******************* */
+
+@media screen and (max-width: 1060px){
+    .footer-navabr{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 775px){
+    .innerList.active{
+        display: none;
+    }
+    .innerList1.active{
+        display: none;
+    }
+    .sub-innerList1.active{
+        display: none;
+    }
+    .innerList2.active{
+        display: none;
+    }
+    .innerList3.active{
+        display: none;
+    }
+    .sub-innerList3.active{
+        display: none;
+    }
+    .sub-s-innerList3.active{
+        display: none;
+    }
+    .sub-s1-innerList3.active{
+        display: none;
+    }
+    .innerList4.active{
+        display: none;
+    }
+    .sub-innerList4.active{
+        display: none;
+    }
+    .footer-navabr{
+        display: flex;
+        flex-direction: column;
+    }
+    .ShopandLearn{
+        width: 100%;
+    }
+    .ShopandLearn ul .footerHeading{
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+    }
+    .Services{
+        width: 100%;
+    }
+    .Services ul .footerHeading1{
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+    }
+    .Services ul .sub-footerHeading1{
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+    }
+    .AppleStore{
+        width: 100%;
+    }
+    .AppleStore ul .footerHeading2{
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+    }
+    .ForBusiness{
+        width: 100%;
+    }
+    .ForBusiness ul .footerHeading3{
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+    }
+    .ForBusiness ul .sub-footerHeading3{
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+    }
+    .ForBusiness ul .sub-s-footerHeading3{
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+    }
+    .ForBusiness ul .sub-s1-footerHeading3{
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+    }
+    .AppleValues{
+        width: 100%;
+    }
+    .AppleValues ul .footerHeading4{
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+    }
+    .AppleValues ul .sub-footerHeading4{
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+    }
+}
+.more-bottom{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.more-bottom p{
+    font-size: 0.8em;
+    color: #6e6b6bd1;
+    padding: 0.5em 0;
+}
+.more-bottom p a{
+    color: #0681ea;
+}
+.more-bottom p a:hover{
+    text-decoration: underline;
+}
+.horizontal1{
+    width: 100%;
+    margin: 0.3em 0;
+}
+.more-bottom .copyright{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.more-bottom .copyright ul{
+    display: inline-flex;
+}
+.more-bottom .copyright ul li{
+    padding: 0 0.5em;
+    border-left: 1px solid #ccc;
+}
+.more-bottom .copyright ul li a{
+    font-size: 0.8em;
+    color: #504e4ed1;
+}
+.more-bottom .copyright ul li a:hover{
+    text-decoration: underline;
+    text-decoration-color: #000;
+}
+.more-bottom .copyright a{
+    font-size: 0.8em;
+    color: #504e4ed1;
+}
+.more-bottom .copyright a:hover{
+    text-decoration: underline;
+    text-decoration-color: #000;
+}
+@media screen and (max-width: 1060px){
+    .more-bottom{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 850px){
+    .more-bottom .copyright{
+        display: flex;
+        flex-direction: column;
+    }
+    .more-bottom .copyright ul{
+        padding: 0.5em 0;
+    }
+    .more-bottom .copyright a{
+        padding-top: 0.5em;
+    }
+}
+@media screen and (max-width: 500px){
+    .more-bottom .copyright{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .more-bottom .copyright ul li{
+        border: none;
+        padding: 0 0.3em;
+    }
+    .more-bottom .copyright ul li.last{
+        padding-left: 0;
+    }
+    .more-bottom .copyright ul li a{
+        font-size: 0.7em;
+    }
+}
