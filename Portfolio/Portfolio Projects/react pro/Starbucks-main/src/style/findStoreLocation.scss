@@ -1,0 +1,125 @@
+.find__store__location {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  .left__side {
+    width: 50%;
+    padding: 2rem;
+
+    .search__area {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+
+      input {
+        width: 300px;
+        height: 40px;
+        border: none;
+        border-bottom: 2px solid #333;
+        outline: none;
+        font-size: 1.1rem;
+      }
+
+      span {
+        font-size: 1.3rem;
+        border-bottom: 2px solid #333;
+        cursor: pointer;
+
+        i {
+          color: #333;
+        }
+      }
+      button {
+        width: 80px;
+        height: 35px;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin: 0 2rem;
+        cursor: pointer;
+        border-color: #008859;
+        color: #008859;
+        background: transparent;
+        border: 1px solid;
+      }
+    }
+
+    .content {
+      margin: 2rem 0;
+
+      h1 {
+        font-size: 1.8rem;
+        color: #333;
+        padding: 1rem 0;
+      }
+
+      p {
+        font-size: 1.1rem;
+        color: #767171;
+      }
+    }
+  }
+
+  .right__side {
+    width: 50%;
+    display: flex;
+    iframe {
+      border: none;
+      outline: none;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .find__store__location {
+    width: 90%;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+
+    .left__side {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .search__area {
+        justify-content: center;
+      }
+      .content {
+        width: 95%;
+
+        h1 {
+          font-size: 1.5rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+    .right__side {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+
+      iframe {
+        border-radius: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .find__store__location .left__side {
+    padding: 0;
+    margin: 2rem 0;
+  }
+  .find__store__location .left__side .search__area button {
+    display: none;
+  }
+}

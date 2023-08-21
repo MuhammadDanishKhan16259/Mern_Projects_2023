@@ -1,0 +1,25 @@
+{
+    "customer": [
+        {
+            "id": 1,
+            "image": "man1",
+            "name": "Mirzaban",
+            "job": "Front-end Developer",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, fugiat!"
+        },
+        {
+            "id": 2,
+            "image": "man2",
+            "name": "Shaykh Mirzaban",
+            "job": "Back-end Developer",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, fugiat!"
+        },
+        {
+            "id": 3,
+            "image": "man3",
+            "name": "Mirza",
+            "job": "MERN STACK Developer",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, fugiat!"
+        }
+    ]
+}

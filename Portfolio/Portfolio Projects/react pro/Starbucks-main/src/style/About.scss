@@ -1,0 +1,46 @@
+.about {
+  height: 100%;
+  padding: 1.5rem;
+
+  .heading {
+    h1 {
+      font-size: 1.5rem;
+      color: #12221e;
+    }
+  }
+  .table {
+    margin: 2rem 0;
+    width: 100%;
+
+    table {
+      border: 2px solid #1e3932;
+      width: 500px;
+      border-radius: 5px;
+
+      thead {
+        background: #1e3932;
+        color: #fff;
+        tr {
+          th {
+            padding: 0.5rem;
+          }
+        }
+      }
+      tbody {
+        text-align: center;
+        tr {
+          td {
+            padding: 1rem;
+            background: #eee;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .about .table table {
+    width: 100%;
+  }
+}
